@@ -9,6 +9,27 @@ Using this plugin is very simple, i wrote it because i did not want a heavy fram
 - You call the function and chain the methods ``` $.crud().read("urlhere", dataobjecthere, datatypehere).done(function(data) {
        alert(data);
      }); ```
+
+# Methods
+
+## Create
+$.crud().create("urlhere", dataobjecthere, datatypehere).done(function(data) { alert(data); });
+
+## Read
+$.crud().read("urlhere", dataobjecthere, datatypehere).done(function(data) { alert(data); });
+
+## Update
+$.crud().update("GET/PUT/PATCH", "urlhere", dataobjecthere, datatypehere).done(function(data) { alert(data); });
+
+## Delete
+$.crud().create("GET/POST", "urlhere", dataobjecthere, datatypehere).done(function(data) { alert(data); });
+
+The update/delete functions accept a method on how you'd to you like to handle the callback. read is GET and create is POST and handles those for you out of the box.
+
+# Handling custom headers and async
+
+I recommend for handling custom headers and async to use ajaxSetup
+``` $.ajaxSetup({headers: {"X-Test-Header": "test-value", "async":true}}); ```
      
 # Bonus Route Method
 
