@@ -23,7 +23,7 @@ $.crud().read("urlhere", dataobjecthere, datatypehere).done(function(data) { ale
 $.crud().update("GET/PUT/PATCH", "urlhere", dataobjecthere, datatypehere).done(function(data) { alert(data); });
 
 ## Delete
-$.crud().create("GET/POST", "urlhere", dataobjecthere, datatypehere).done(function(data) { alert(data); });
+$.crud().delete("GET/POST", "urlhere", dataobjecthere, datatypehere).done(function(data) { alert(data); });
 
 The update/delete functions accept a method on how you'd to you like to handle the callback. read is GET and create is POST and handles those for you out of the box.
 
