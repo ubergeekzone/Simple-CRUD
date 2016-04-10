@@ -5,6 +5,7 @@ Using this plugin is very simple, i wrote it because i did not want a heavy fram
 
 #How do i use Simple CRUD?
 
+- Make sure you have jQuery included.
 - Include it in to your app/website like ```<script src="simple_crud.lib.js"></script>```
 - You call the function and chain the methods ``` $.crud().read("urlhere", dataobjecthere, datatypehere).done(function(data) {
        alert(data);
