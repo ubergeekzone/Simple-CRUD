@@ -36,6 +36,6 @@ I recommend for handling custom headers and async to use ajaxSetup
 
 I have also included a route method in this lib that allows you to detect what current page you are on as for controlling when your method's should fire and be called.
 
-Use it like so for path only  ``` $.crud.route('path');   ``` or ``` $.crud.route('url'); ``` for full url
+Use it like so for path only  ``` $.crud.route('path');   ``` or ``` $.crud.route('url'); ``` for full url, you can split up the route by adding the postion to your function like so ``` $.crud.route('path', 1);   ``` 
 
 Of coruse this is not a replacement for AngularJS or full on framework, It is a simple soultion for getting a project completed without a heavy load on resources. 
