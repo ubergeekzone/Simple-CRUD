@@ -11,16 +11,38 @@
 
         var methods = {
             route : function(type){
-                if(type == "path") {
+               
+               if(type == "path") {
 
-                    return window.location.pathname;
+                    var location = window.location.pathname;
+
+                    if(slice) {
+
+                        var location_position = location.split("/");
+
+                        return location_position[slice];
+
+                    } else {
+                        return location;
+                    }
 
                 } else if(type == "url") {
 
-                    return window.location.href;
+                    var location = window.location.href;
 
-                }
+                    if(slice) {
+
+                        var location_position = location.split("/");
+
+                        return location_position[slice];
+
+                    } else {
+
+                        return location;
+                    }
+                    
                 return this;
+                
             },
             create : function(url, data, dataType){
 
